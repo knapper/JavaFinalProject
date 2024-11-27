@@ -46,4 +46,10 @@ public class Account {
     public void setBalance(double balance){
         this.balance = balance;
     }
+
+    public String toString(){
+        return "Account Number: " + accountNumber + "\n" +
+                "Client Name: " + clientName + "\n" +
+                "Balance: " + balance;
+    }
 }

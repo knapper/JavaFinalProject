@@ -75,7 +75,11 @@ public class AccountService {
         Account currentAccount = usersession.getAccount(); // get the current account object
         int currentAccountNumber = currentAccount.getAccountNumber(); // get the current account number
 
-        bankingDAO.updateAccountInfo(currentAccountNumber, newName);
+        bankingDAO.updateAccountInfo(currentAccountNumber, newName); // update the database
+
+        currentAccount.setClientName(newName); // update the current account object
+        usersession.setAccount(currentAccount); // update the user session object
+
         return true;
     }
 
@@ -84,7 +88,11 @@ public class AccountService {
         Account currentAccount = userSession.getAccount();
         int currentAccountNumber = currentAccount.getAccountNumber(); 
 
-        bankingDAO.updatePassword(currentAccountNumber, newPassword);
+        bankingDAO.updatePassword(currentAccountNumber, newPassword); // update the database
+
+        currentAccount.setPassword(newPassword); // update the current account object
+        userSession.setAccount(currentAccount); // update the user session object
+
         return true;
     }
 
@@ -97,7 +105,11 @@ public class AccountService {
 
         double newBalance = currentBalance + amount;
 
-        bankingDAO.updateBalance(currentAccountNumber, newBalance);
+        bankingDAO.updateBalance(currentAccountNumber, newBalance); // uodate the database
+
+        currentAccount.setBalance(newBalance); // update the current account object
+        userSession.setAccount(currentAccount); // update the user session object
+
         return true;
     }
     // make a withdrawal
@@ -108,7 +120,10 @@ public class AccountService {
 
         if (currentBalance >= amount){
             double newBalance = currentBalance - amount;
-            bankingDAO.updateBalance(currentAccountNumber, newBalance);
+            bankingDAO.updateBalance(currentAccountNumber, newBalance); // uodate the database
+            
+            currentAccount.setBalance(newBalance); // update the current account object
+            userSession.setAccount(currentAccount); // update the user session object
             return true;
         }else {
             return false;
@@ -120,7 +135,10 @@ public class AccountService {
         Account currentAccount = userSession.getAccount();
         int currentAccountNumber = currentAccount.getAccountNumber();
 
-        bankingDAO.deleteAccount(currentAccountNumber);
+        bankingDAO.deleteAccount(currentAccountNumber); // delete the account from the database
+        
+        userSession.setAccount(null); // set the user session object to null
+
         return true;
     }
 

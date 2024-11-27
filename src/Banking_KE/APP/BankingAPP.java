@@ -10,6 +10,6 @@ public class BankingAPP {
         AccountView accountView = new AccountView();
         AccountController accountController = new AccountController(accountService,accountView);
 
-        accountController.run();
+        accountController.navigateToMainMenu();
     }
 }
