@@ -1,4 +1,4 @@
-package Banking_KE.dao;
+package Banking.dao;
 
 public class DriverTest {
     public static void main(String[] args) {

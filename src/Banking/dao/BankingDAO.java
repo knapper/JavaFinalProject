@@ -1,7 +1,7 @@
-package Banking_KE.dao;
+package Banking.dao;
 import java.sql.SQLException;
 
-import Banking_KE.model.*;
+import Banking.model.*;
 
 // declare CRUD operations
 public interface BankingDAO {

@@ -1,4 +1,4 @@
-package Banking_KE.dao;
+package Banking.dao;
 import java.sql.*;
 public class DBConnection {
     private static String url = "jdbc:mysql://localhost:3306/Banking"; // create a string variable to store the url

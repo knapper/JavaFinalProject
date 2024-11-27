@@ -1,7 +1,7 @@
-package Banking_KE.dao;
+package Banking.dao;
 import java.sql.*;
 
-import Banking_KE.model.*;
+import Banking.model.*;
 public class AccountDAOImpl implements BankingDAO{
     // implement the CRUD operations
     @Override

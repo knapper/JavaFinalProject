@@ -1,4 +1,4 @@
-package Banking_KE.model;
+package Banking.model;
 
 public class Account {
     private int accountNumber;

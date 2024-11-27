@@ -1,12 +1,12 @@
-package Banking_KE.controller;
-
-import Banking_KE.model.*;
-import Banking_KE.service.*;
-import Banking_KE.session.*;
-import Banking_KE.view.*;
+package Banking.controller;
 
 import java.sql.SQLException;
 import java.util.Scanner;
+
+import Banking.model.*;
+import Banking.service.*;
+import Banking.session.*;
+import Banking.view.*;
 
 public class AccountController_CMD {
     private AccountService accountService;

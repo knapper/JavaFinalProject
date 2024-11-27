@@ -1,10 +1,11 @@
-package Banking_KE.view;
-
-import Banking_KE.controller.AccountController;
-import Banking_KE.model.Account;
-import Banking_KE.session.UserSession;
+package Banking.view;
 
 import javax.swing.*;
+
+import Banking.controller.AccountController;
+import Banking.model.Account;
+import Banking.session.UserSession;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

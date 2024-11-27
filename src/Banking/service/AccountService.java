@@ -1,10 +1,10 @@
-package Banking_KE.service;
-
-import Banking_KE.dao.*;
-import Banking_KE.model.*;
-import Banking_KE.session.*;
+package Banking.service;
 
 import java.sql.SQLException;
+
+import Banking.dao.*;
+import Banking.model.*;
+import Banking.session.*;
 
 public class AccountService {
     // this class will contain the business logic of the application

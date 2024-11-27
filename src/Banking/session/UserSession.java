@@ -1,6 +1,6 @@
-package Banking_KE.session;
+package Banking.session;
 
-import Banking_KE.model.Account;
+import Banking.model.Account;
 
 public class UserSession { // use UserSession to store current user's information
     private Account currentaccount;

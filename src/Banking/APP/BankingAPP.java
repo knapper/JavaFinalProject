@@ -1,8 +1,8 @@
-package Banking_KE.APP;
-import Banking_KE.controller.*;
-import Banking_KE.dao.*;
-import Banking_KE.service.*;
-import Banking_KE.view.*;
+package Banking.APP;
+import Banking.controller.*;
+import Banking.dao.*;
+import Banking.service.*;
+import Banking.view.*;
 public class BankingAPP {
     public static void main(String[] args) {
         BankingDAO bankingDAO = new AccountDAOImpl();

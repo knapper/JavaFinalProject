@@ -1,6 +1,6 @@
-package Banking_KE.view;
+package Banking.view;
 
-import Banking_KE.model.*;
+import Banking.model.*;
 
 public class AccountView_CMD {
     public void displayMainMenu(){
