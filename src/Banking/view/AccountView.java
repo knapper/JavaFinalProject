@@ -6,9 +6,6 @@ import Banking.controller.AccountController;
 import Banking.model.Account;
 import Banking.session.UserSession;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 public class AccountView {
     private JFrame frame;
 
